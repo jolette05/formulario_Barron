@@ -24,40 +24,57 @@ namespace formulario_Barron
         {
             try
             {
-
                 TextReader InicioseSesion = new StreamReader(txtboxNombreSesion.Text + ".txt");
-
+               
                 if (InicioseSesion.ReadLine() == txtboxContraseña.Text)
-                { 
+                {
                     MessageBox.Show("El usuario es correcto ");
                     Home home = new Home();
                     home.Show();
                     Hide();
+                    
+                }
+                
+                else 
+                {
+                    MessageBox.Show("El usuario no se ha encontrado");
+
+                    
+                }
+                
+
+
+                if (InicioseSesion.ReadLine() == (""))
+                {
+                    MessageBox.Show("Algu,porfavor añada lod datos del usuario");
+
                 }
             }
             catch
             {
-                MessageBox.Show("Datos incorrectos", "Error");
+                MessageBox.Show("Datos incorrectos, por favor añada datos validos","Error de datos");
             }
-        }
+          }
+
+        
 
         private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void click_para_registrar_Click(object sender, EventArgs e)
-        {
-
-            //CREADO POR JOLETTE 
-            registro login = new registro();
-            login.Show();
-            Hide();
-        }
+      
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void click_para_registrar_Click(object sender, EventArgs e)
+        {
+            registro login = new registro();
+            login.Show();
+            Hide();
         }
     }
 }

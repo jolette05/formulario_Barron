@@ -28,11 +28,7 @@ namespace formulario_Barron.Formas
 
         }
 
-        private void registroDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //creado por jolette 
-
-        }
+        
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {

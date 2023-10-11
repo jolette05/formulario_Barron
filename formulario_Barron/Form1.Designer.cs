@@ -141,7 +141,7 @@ namespace formulario_Barron
             this.click_para_registrar.TabIndex = 8;
             this.click_para_registrar.Text = "click aqui ";
             this.click_para_registrar.Click += new System.EventHandler(this.click_para_registrar_Click);
-            // 
+            
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
