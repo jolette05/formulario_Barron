@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using formulario_Barron.Formas.Login;
 using formulario_Barron.Formas;
+using System.IO;
 
 namespace formulario_Barron
 {
@@ -21,12 +22,23 @@ namespace formulario_Barron
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //creado por jolette 
+            try
+            {
 
-            Home home = new Home ();
-            home.Show();
-            Hide();
+                TextReader InicioseSesion = new StreamReader(txtboxNombreSesion.Text + ".txt");
 
+                if (InicioseSesion.ReadLine() == txtboxContraseña.Text)
+                { 
+                    MessageBox.Show("El usuario es correcto ");
+                    Home home = new Home();
+                    home.Show();
+                    Hide();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Datos incorrectos", "Error");
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)

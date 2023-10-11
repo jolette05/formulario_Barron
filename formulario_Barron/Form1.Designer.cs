@@ -31,9 +31,9 @@ namespace formulario_Barron
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtboxNombreSesion = new System.Windows.Forms.TextBox();
+            this.txtboxContraseña = new System.Windows.Forms.TextBox();
+            this.botonIniciarSesion = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label_crear_cuenta_ = new System.Windows.Forms.Label();
@@ -62,37 +62,37 @@ namespace formulario_Barron
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox1
+            // txtboxNombreSesion
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(489, 123);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(343, 76);
-            this.textBox1.TabIndex = 2;
+            this.txtboxNombreSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxNombreSesion.Location = new System.Drawing.Point(489, 123);
+            this.txtboxNombreSesion.Multiline = true;
+            this.txtboxNombreSesion.Name = "txtboxNombreSesion";
+            this.txtboxNombreSesion.Size = new System.Drawing.Size(343, 76);
+            this.txtboxNombreSesion.TabIndex = 2;
             // 
-            // textBox2
+            // txtboxContraseña
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(489, 310);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(354, 72);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtboxContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxContraseña.Location = new System.Drawing.Point(489, 310);
+            this.txtboxContraseña.Multiline = true;
+            this.txtboxContraseña.Name = "txtboxContraseña";
+            this.txtboxContraseña.PasswordChar = '*';
+            this.txtboxContraseña.Size = new System.Drawing.Size(354, 72);
+            this.txtboxContraseña.TabIndex = 3;
+            this.txtboxContraseña.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // button1
+            // botonIniciarSesion
             // 
-            this.button1.BackColor = System.Drawing.Color.SlateBlue;
-            this.button1.Font = new System.Drawing.Font("Modern No. 20", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1106, 377);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 91);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Iniciar ";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.botonIniciarSesion.BackColor = System.Drawing.Color.SlateBlue;
+            this.botonIniciarSesion.Font = new System.Drawing.Font("Modern No. 20", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonIniciarSesion.Location = new System.Drawing.Point(1106, 377);
+            this.botonIniciarSesion.Name = "botonIniciarSesion";
+            this.botonIniciarSesion.Size = new System.Drawing.Size(175, 91);
+            this.botonIniciarSesion.TabIndex = 4;
+            this.botonIniciarSesion.Text = "Iniciar ";
+            this.botonIniciarSesion.UseVisualStyleBackColor = false;
+            this.botonIniciarSesion.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -153,9 +153,9 @@ namespace formulario_Barron
             this.Controls.Add(this.label_crear_cuenta_);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.botonIniciarSesion);
+            this.Controls.Add(this.txtboxContraseña);
+            this.Controls.Add(this.txtboxNombreSesion);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
@@ -172,9 +172,9 @@ namespace formulario_Barron
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtboxNombreSesion;
+        private System.Windows.Forms.TextBox txtboxContraseña;
+        private System.Windows.Forms.Button botonIniciarSesion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_crear_cuenta_;

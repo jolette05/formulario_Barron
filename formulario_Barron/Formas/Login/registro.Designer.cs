@@ -35,11 +35,11 @@ namespace formulario_Barron.Formas.Login
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtboxNombre = new System.Windows.Forms.TextBox();
+            this.txtboxApellidos = new System.Windows.Forms.TextBox();
+            this.txtboxUsuario = new System.Windows.Forms.TextBox();
+            this.txtboxContraseña = new System.Windows.Forms.TextBox();
+            this.botonregistrar = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regresarahomedesderegistro = new System.Windows.Forms.ToolStripMenuItem();
@@ -119,55 +119,54 @@ namespace formulario_Barron.Formas.Login
             this.label5.TabIndex = 5;
             this.label5.Text = "Contraseña";
             // 
-            // textBox1
+            // txtboxNombre
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(425, 130);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(371, 50);
-            this.textBox1.TabIndex = 6;
+            this.txtboxNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxNombre.Location = new System.Drawing.Point(425, 130);
+            this.txtboxNombre.Multiline = true;
+            this.txtboxNombre.Name = "txtboxNombre";
+            this.txtboxNombre.Size = new System.Drawing.Size(371, 50);
+            this.txtboxNombre.TabIndex = 6;
             // 
-            // textBox2
+            // txtboxApellidos
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(416, 212);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(380, 44);
-            this.textBox2.TabIndex = 7;
+            this.txtboxApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxApellidos.Location = new System.Drawing.Point(416, 212);
+            this.txtboxApellidos.Multiline = true;
+            this.txtboxApellidos.Name = "txtboxApellidos";
+            this.txtboxApellidos.Size = new System.Drawing.Size(380, 44);
+            this.txtboxApellidos.TabIndex = 7;
             // 
-            // textBox3
+            // txtboxUsuario
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(416, 302);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(384, 55);
-            this.textBox3.TabIndex = 8;
+            this.txtboxUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxUsuario.Location = new System.Drawing.Point(416, 302);
+            this.txtboxUsuario.Multiline = true;
+            this.txtboxUsuario.Name = "txtboxUsuario";
+            this.txtboxUsuario.Size = new System.Drawing.Size(384, 55);
+            this.txtboxUsuario.TabIndex = 8;
             // 
-            // textBox4
+            // txtboxContraseña
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(416, 401);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(380, 45);
-            this.textBox4.TabIndex = 9;
+            this.txtboxContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxContraseña.Location = new System.Drawing.Point(416, 401);
+            this.txtboxContraseña.Multiline = true;
+            this.txtboxContraseña.Name = "txtboxContraseña";
+            this.txtboxContraseña.Size = new System.Drawing.Size(380, 45);
+            this.txtboxContraseña.TabIndex = 9;
             // 
-            // button1
+            // botonregistrar
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.MediumPurple;
-            this.button1.Location = new System.Drawing.Point(988, 392);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(289, 85);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.botonregistrar.BackColor = System.Drawing.Color.Black;
+            this.botonregistrar.Font = new System.Drawing.Font("Palatino Linotype", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonregistrar.ForeColor = System.Drawing.Color.MediumPurple;
+            this.botonregistrar.Location = new System.Drawing.Point(988, 392);
+            this.botonregistrar.Name = "botonregistrar";
+            this.botonregistrar.Size = new System.Drawing.Size(289, 85);
+            this.botonregistrar.TabIndex = 10;
+            this.botonregistrar.Text = "Registrar";
+            this.botonregistrar.UseVisualStyleBackColor = false;
+            this.botonregistrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // menuStrip1
             // 
@@ -211,11 +210,11 @@ namespace formulario_Barron.Formas.Login
             this.BackgroundImage = global::formulario_Barron.Properties.Resources.login_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1334, 512);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.botonregistrar);
+            this.Controls.Add(this.txtboxContraseña);
+            this.Controls.Add(this.txtboxUsuario);
+            this.Controls.Add(this.txtboxApellidos);
+            this.Controls.Add(this.txtboxNombre);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -243,11 +242,11 @@ namespace formulario_Barron.Formas.Login
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtboxNombre;
+        private System.Windows.Forms.TextBox txtboxApellidos;
+        private System.Windows.Forms.TextBox txtboxUsuario;
+        private System.Windows.Forms.TextBox txtboxContraseña;
+        private System.Windows.Forms.Button botonregistrar;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem regresarahomedesderegistro;
