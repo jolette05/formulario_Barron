@@ -36,7 +36,7 @@ namespace formulario_Barron.Formas.Login
             this.cmbxgenero = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtboxedad = new System.Windows.Forms.TextBox();
-            this.txboxlatidos = new System.Windows.Forms.TextBox();
+            this.txtboxlatidos = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbllatidos = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -45,6 +45,8 @@ namespace formulario_Barron.Formas.Login
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.regresarAHomeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.botoncalcularlatidos = new System.Windows.Forms.Button();
+            this.botonlimpiarlatidos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -114,9 +116,9 @@ namespace formulario_Barron.Formas.Login
             // 
             this.pictureBox1.BackgroundImage = global::formulario_Barron.Properties.Resources.Captura_de_pantalla_2023_09_28_221427;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(975, 176);
+            this.pictureBox1.Location = new System.Drawing.Point(909, 150);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(279, 230);
+            this.pictureBox1.Size = new System.Drawing.Size(342, 237);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -130,14 +132,15 @@ namespace formulario_Barron.Formas.Login
             this.txtboxedad.TabIndex = 7;
             this.txtboxedad.TextChanged += new System.EventHandler(this.txtboxedad_TextChanged);
             // 
-            // txboxlatidos
+            // txtboxlatidos
             // 
-            this.txboxlatidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txboxlatidos.Location = new System.Drawing.Point(400, 359);
-            this.txboxlatidos.Multiline = true;
-            this.txboxlatidos.Name = "txboxlatidos";
-            this.txboxlatidos.Size = new System.Drawing.Size(296, 47);
-            this.txboxlatidos.TabIndex = 8;
+            this.txtboxlatidos.Enabled = false;
+            this.txtboxlatidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxlatidos.Location = new System.Drawing.Point(400, 359);
+            this.txtboxlatidos.Multiline = true;
+            this.txtboxlatidos.Name = "txtboxlatidos";
+            this.txtboxlatidos.Size = new System.Drawing.Size(296, 47);
+            this.txtboxlatidos.TabIndex = 8;
             // 
             // label1
             // 
@@ -166,7 +169,7 @@ namespace formulario_Barron.Formas.Login
             this.ayudaToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1315, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1315, 30);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -176,20 +179,20 @@ namespace formulario_Barron.Formas.Login
             this.regresarAHomeToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(81, 27);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(73, 26);
             this.ayudaToolStripMenuItem.Text = "Archivo";
             // 
             // regresarAHomeToolStripMenuItem
             // 
             this.regresarAHomeToolStripMenuItem.Name = "regresarAHomeToolStripMenuItem";
-            this.regresarAHomeToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.regresarAHomeToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.regresarAHomeToolStripMenuItem.Text = "regresar a home ";
             this.regresarAHomeToolStripMenuItem.Click += new System.EventHandler(this.regresarAHomeToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.salirToolStripMenuItem.Text = "salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -198,14 +201,40 @@ namespace formulario_Barron.Formas.Login
             this.ayudaToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.regresarAHomeToolStripMenuItem1});
             this.ayudaToolStripMenuItem1.Name = "ayudaToolStripMenuItem1";
-            this.ayudaToolStripMenuItem1.Size = new System.Drawing.Size(77, 27);
+            this.ayudaToolStripMenuItem1.Size = new System.Drawing.Size(69, 26);
             this.ayudaToolStripMenuItem1.Text = "Ayuda ";
             // 
             // regresarAHomeToolStripMenuItem1
             // 
             this.regresarAHomeToolStripMenuItem1.Name = "regresarAHomeToolStripMenuItem1";
-            this.regresarAHomeToolStripMenuItem1.Size = new System.Drawing.Size(237, 28);
+            this.regresarAHomeToolStripMenuItem1.Size = new System.Drawing.Size(215, 26);
             this.regresarAHomeToolStripMenuItem1.Text = "¿ Cómo funciona ?";
+            // 
+            // botoncalcularlatidos
+            // 
+            this.botoncalcularlatidos.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.botoncalcularlatidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botoncalcularlatidos.ForeColor = System.Drawing.Color.DarkMagenta;
+            this.botoncalcularlatidos.Location = new System.Drawing.Point(903, 430);
+            this.botoncalcularlatidos.Name = "botoncalcularlatidos";
+            this.botoncalcularlatidos.Size = new System.Drawing.Size(172, 72);
+            this.botoncalcularlatidos.TabIndex = 12;
+            this.botoncalcularlatidos.Text = "Calcular";
+            this.botoncalcularlatidos.UseVisualStyleBackColor = false;
+            this.botoncalcularlatidos.Click += new System.EventHandler(this.botoncalcularlatidos_Click);
+            // 
+            // botonlimpiarlatidos
+            // 
+            this.botonlimpiarlatidos.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.botonlimpiarlatidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonlimpiarlatidos.ForeColor = System.Drawing.Color.DarkMagenta;
+            this.botonlimpiarlatidos.Location = new System.Drawing.Point(1103, 430);
+            this.botonlimpiarlatidos.Name = "botonlimpiarlatidos";
+            this.botonlimpiarlatidos.Size = new System.Drawing.Size(158, 72);
+            this.botonlimpiarlatidos.TabIndex = 13;
+            this.botonlimpiarlatidos.Text = "Limpiar";
+            this.botonlimpiarlatidos.UseVisualStyleBackColor = false;
+            this.botonlimpiarlatidos.Click += new System.EventHandler(this.botonlimpiarlatidos_Click);
             // 
             // numerodelatidos
             // 
@@ -214,9 +243,11 @@ namespace formulario_Barron.Formas.Login
             this.BackgroundImage = global::formulario_Barron.Properties.Resources.fondo_de_latidos;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1315, 537);
+            this.Controls.Add(this.botonlimpiarlatidos);
+            this.Controls.Add(this.botoncalcularlatidos);
             this.Controls.Add(this.lbllatidos);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txboxlatidos);
+            this.Controls.Add(this.txtboxlatidos);
             this.Controls.Add(this.txtboxedad);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmbxgenero);
@@ -246,7 +277,7 @@ namespace formulario_Barron.Formas.Login
         private System.Windows.Forms.ComboBox cmbxgenero;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtboxedad;
-        private System.Windows.Forms.TextBox txboxlatidos;
+        private System.Windows.Forms.TextBox txtboxlatidos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbllatidos;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -255,5 +286,7 @@ namespace formulario_Barron.Formas.Login
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem regresarAHomeToolStripMenuItem1;
+        private System.Windows.Forms.Button botoncalcularlatidos;
+        private System.Windows.Forms.Button botonlimpiarlatidos;
     }
 }

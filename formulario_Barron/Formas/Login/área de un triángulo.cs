@@ -34,18 +34,35 @@ namespace formulario_Barron.Formas.Login
 
         private void Calcular_area_Click(object sender, EventArgs e)
         {
-            int Base;
-            Base = Convert.ToInt32(textBox1.Text);
 
-            int Altura;
-            Altura = Convert.ToInt32(textBox3.Text);
+            try
+            {
 
-            double resultado;
+                int Base;
+                Base = Convert.ToInt32(txtboxbase.Text);
 
-            resultado = (Base * Altura) / 2;
+                int Altura;
+                Altura = Convert.ToInt32(txtboxaltura.Text);
 
-            textBox2.Text = Convert.ToString(resultado);
+                double resultado;
+
+                resultado = (Base * Altura) / 2;
+
+                txtboxarea.Text = Convert.ToString(resultado);
+
+            }
+
+            catch
+            {
+                MessageBox.Show("Datos incorrectos,porfavor agregue una cantidad valida", "Error de datos ");
+            }
+
+
         }
+
+
+
+
 
         private void regresar_a_Home_area_Click(object sender, EventArgs e)
         {
@@ -64,6 +81,13 @@ namespace formulario_Barron.Formas.Login
         private void salirarea_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void botonlimpiartriangulo_Click(object sender, EventArgs e)
+        {
+            txtboxbase.Clear();
+            txtboxaltura.Clear();
+            txtboxarea.Clear(); 
         }
     }
 }

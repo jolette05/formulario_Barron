@@ -33,14 +33,15 @@ namespace formulario_Barron.Formas.Login
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.boton_calcular = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtboxvalor1 = new System.Windows.Forms.TextBox();
+            this.txtboxvalor2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtboxresultadosuma = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regresarAHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btonlimpiarsuma = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +87,7 @@ namespace formulario_Barron.Formas.Login
             this.boton_calcular.BackColor = System.Drawing.Color.Black;
             this.boton_calcular.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton_calcular.ForeColor = System.Drawing.Color.MediumPurple;
-            this.boton_calcular.Location = new System.Drawing.Point(1038, 413);
+            this.boton_calcular.Location = new System.Drawing.Point(835, 413);
             this.boton_calcular.Name = "boton_calcular";
             this.boton_calcular.Size = new System.Drawing.Size(183, 70);
             this.boton_calcular.TabIndex = 3;
@@ -94,23 +95,23 @@ namespace formulario_Barron.Formas.Login
             this.boton_calcular.UseVisualStyleBackColor = false;
             this.boton_calcular.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // txtboxvalor1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(460, 154);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(398, 69);
-            this.textBox1.TabIndex = 4;
+            this.txtboxvalor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxvalor1.Location = new System.Drawing.Point(460, 154);
+            this.txtboxvalor1.Multiline = true;
+            this.txtboxvalor1.Name = "txtboxvalor1";
+            this.txtboxvalor1.Size = new System.Drawing.Size(398, 69);
+            this.txtboxvalor1.TabIndex = 4;
             // 
-            // textBox2
+            // txtboxvalor2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(460, 290);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(398, 77);
-            this.textBox2.TabIndex = 5;
+            this.txtboxvalor2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxvalor2.Location = new System.Drawing.Point(460, 290);
+            this.txtboxvalor2.Multiline = true;
+            this.txtboxvalor2.Name = "txtboxvalor2";
+            this.txtboxvalor2.Size = new System.Drawing.Size(398, 77);
+            this.txtboxvalor2.TabIndex = 5;
             // 
             // label3
             // 
@@ -124,15 +125,15 @@ namespace formulario_Barron.Formas.Login
             this.label3.TabIndex = 6;
             this.label3.Text = "Resultado ";
             // 
-            // textBox3
+            // txtboxresultadosuma
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(460, 413);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(245, 54);
-            this.textBox3.TabIndex = 7;
+            this.txtboxresultadosuma.Enabled = false;
+            this.txtboxresultadosuma.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxresultadosuma.Location = new System.Drawing.Point(460, 413);
+            this.txtboxresultadosuma.Multiline = true;
+            this.txtboxresultadosuma.Name = "txtboxresultadosuma";
+            this.txtboxresultadosuma.Size = new System.Drawing.Size(245, 54);
+            this.txtboxresultadosuma.TabIndex = 7;
             // 
             // menuStrip1
             // 
@@ -141,7 +142,7 @@ namespace formulario_Barron.Formas.Login
             this.archivoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1333, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1333, 28);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -151,22 +152,35 @@ namespace formulario_Barron.Formas.Login
             this.regresarAHomeToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(81, 27);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // regresarAHomeToolStripMenuItem
             // 
             this.regresarAHomeToolStripMenuItem.Name = "regresarAHomeToolStripMenuItem";
-            this.regresarAHomeToolStripMenuItem.Size = new System.Drawing.Size(228, 28);
+            this.regresarAHomeToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.regresarAHomeToolStripMenuItem.Text = "Regresar a home ";
             this.regresarAHomeToolStripMenuItem.Click += new System.EventHandler(this.regresarAHomeToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(228, 28);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // btonlimpiarsuma
+            // 
+            this.btonlimpiarsuma.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btonlimpiarsuma.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btonlimpiarsuma.ForeColor = System.Drawing.Color.MediumPurple;
+            this.btonlimpiarsuma.Location = new System.Drawing.Point(1056, 413);
+            this.btonlimpiarsuma.Name = "btonlimpiarsuma";
+            this.btonlimpiarsuma.Size = new System.Drawing.Size(201, 70);
+            this.btonlimpiarsuma.TabIndex = 9;
+            this.btonlimpiarsuma.Text = "Limpiar ";
+            this.btonlimpiarsuma.UseVisualStyleBackColor = false;
+            this.btonlimpiarsuma.Click += new System.EventHandler(this.btonlimpiarsuma_Click);
             // 
             // ejercicio1
             // 
@@ -174,10 +188,11 @@ namespace formulario_Barron.Formas.Login
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::formulario_Barron.Properties.Resources.login;
             this.ClientSize = new System.Drawing.Size(1333, 517);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.btonlimpiarsuma);
+            this.Controls.Add(this.txtboxresultadosuma);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtboxvalor2);
+            this.Controls.Add(this.txtboxvalor1);
             this.Controls.Add(this.boton_calcular);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -199,13 +214,14 @@ namespace formulario_Barron.Formas.Login
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button boton_calcular;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtboxvalor1;
+        private System.Windows.Forms.TextBox txtboxvalor2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtboxresultadosuma;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem regresarAHomeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.Button btonlimpiarsuma;
     }
 }

@@ -31,7 +31,7 @@ namespace formulario_Barron.Formas
         private void registroDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //creado por jolette 
-             
+
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace formulario_Barron.Formas
 
         private void encontrarElAreaDeUnTrianguloToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Area_de_un_trianfulo login = new Area_de_un_trianfulo ();
+            Area_de_un_trianfulo login = new Area_de_un_trianfulo();
             login.Show();
             Hide();
         }
@@ -85,14 +85,14 @@ namespace formulario_Barron.Formas
 
         private void numeroDeLatidosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            numerodelatidos  login = new numerodelatidos ();
+            numerodelatidos login = new numerodelatidos();
             login.Show();
             Hide();
         }
 
         private void calcularSalarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           Salario login = new Salario();
+            Salario login = new Salario();
             login.Show();
             Hide();
         }
@@ -103,5 +103,13 @@ namespace formulario_Barron.Formas
             login.Show();
             Hide();
         }
+
+        private void visorDeImagenesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Visor_de_imagenes login = new Visor_de_imagenes();
+            login.Show();
+            Hide();
+        }
     }
 }
+

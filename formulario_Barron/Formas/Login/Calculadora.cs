@@ -19,17 +19,26 @@ namespace formulario_Barron.Formas.Login
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int num1;
-            num1 = Convert.ToInt32(textBox1.Text);
 
-            int num2;
-            num2 = Convert.ToInt32(textBox2.Text);
+            try
+            {
+                int num1;
+                num1 = Convert.ToInt32(txtboxvalor1.Text);
 
-            double resultado;
+                int num2;
+                num2 = Convert.ToInt32(txtboxvalor2.Text);
 
-            resultado = (num1 + num2);
+                double resultado;
 
-            textBox3.Text = Convert.ToString(resultado);
+                resultado = (num1 + num2);
+
+                txtboxresultadosuma.Text = Convert.ToString(resultado);
+            }
+
+            catch
+            {
+                MessageBox.Show("Datos invalidos, porfavor agregue cantidades correctas", "Error de datos");
+            }
         }
     
 
@@ -49,6 +58,13 @@ namespace formulario_Barron.Formas.Login
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btonlimpiarsuma_Click(object sender, EventArgs e)
+        {
+            txtboxvalor1.Clear();
+            txtboxvalor2.Clear();
+            txtboxresultadosuma.Clear();
         }
     }
 }

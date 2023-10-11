@@ -47,6 +47,7 @@ namespace formulario_Barron.Formas.Login
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regresarAHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.botonlimpiarraiz = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -178,6 +179,7 @@ namespace formulario_Barron.Formas.Login
             // 
             // txtboxraiz1
             // 
+            this.txtboxraiz1.Enabled = false;
             this.txtboxraiz1.Location = new System.Drawing.Point(557, 203);
             this.txtboxraiz1.Multiline = true;
             this.txtboxraiz1.Name = "txtboxraiz1";
@@ -186,6 +188,7 @@ namespace formulario_Barron.Formas.Login
             // 
             // txtboxraiz2
             // 
+            this.txtboxraiz2.Enabled = false;
             this.txtboxraiz2.Location = new System.Drawing.Point(557, 375);
             this.txtboxraiz2.Multiline = true;
             this.txtboxraiz2.Name = "txtboxraiz2";
@@ -199,7 +202,7 @@ namespace formulario_Barron.Formas.Login
             this.archivoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1336, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1336, 30);
             this.menuStrip1.TabIndex = 14;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -209,22 +212,34 @@ namespace formulario_Barron.Formas.Login
             this.regresarAHomeToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(81, 27);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 26);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // regresarAHomeToolStripMenuItem
             // 
             this.regresarAHomeToolStripMenuItem.Name = "regresarAHomeToolStripMenuItem";
-            this.regresarAHomeToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.regresarAHomeToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.regresarAHomeToolStripMenuItem.Text = "Regresar a home";
             this.regresarAHomeToolStripMenuItem.Click += new System.EventHandler(this.regresarAHomeToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // botonlimpiarraiz
+            // 
+            this.botonlimpiarraiz.BackColor = System.Drawing.Color.Thistle;
+            this.botonlimpiarraiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonlimpiarraiz.Location = new System.Drawing.Point(1038, 415);
+            this.botonlimpiarraiz.Name = "botonlimpiarraiz";
+            this.botonlimpiarraiz.Size = new System.Drawing.Size(226, 68);
+            this.botonlimpiarraiz.TabIndex = 15;
+            this.botonlimpiarraiz.Text = "Limpiar ";
+            this.botonlimpiarraiz.UseVisualStyleBackColor = false;
+            this.botonlimpiarraiz.Click += new System.EventHandler(this.botonlimpiarraiz_Click);
             // 
             // Ecuaciones
             // 
@@ -233,6 +248,7 @@ namespace formulario_Barron.Formas.Login
             this.BackgroundImage = global::formulario_Barron.Properties.Resources.ecuaciones_fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1336, 526);
+            this.Controls.Add(this.botonlimpiarraiz);
             this.Controls.Add(this.txtboxraiz2);
             this.Controls.Add(this.txtboxraiz1);
             this.Controls.Add(this.txtboxvalorA);
@@ -279,5 +295,6 @@ namespace formulario_Barron.Formas.Login
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem regresarAHomeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.Button botonlimpiarraiz;
     }
 }

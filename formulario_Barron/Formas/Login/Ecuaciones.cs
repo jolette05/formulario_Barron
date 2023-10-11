@@ -24,18 +24,24 @@ namespace formulario_Barron.Formas.Login
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                double x1, x2;
 
-            double x1, x2;
+                double a = Convert.ToDouble(txtboxvalorA.Text);
+                double b = Convert.ToDouble(txtboxvalorB.Text);
+                double c = Convert.ToDouble(txtboxvalorC.Text);
 
-            double a= Convert.ToDouble(txtboxvalorA.Text);
-            double b = Convert.ToDouble(txtboxvalorB.Text);
-            double c = Convert.ToDouble(txtboxvalorC.Text);
+                x1 = (-b + Math.Sqrt(Math.Pow(b, 2) - 4 * (a * c))) / 2 * a;
+                x2 = (-b - Math.Sqrt(Math.Pow(b, 2) - 4 * (a * c))) / 2 * a;
 
-            x1 = (-b + Math.Sqrt(Math.Pow(b, 2) - 4* (a * c))) / 2 * a;
-            x2 = (-b - Math.Sqrt(Math.Pow(b, 2) - 4 * (a * c))) / 2 * a;
-
-            txtboxraiz1.Text = x1.ToString();
-            txtboxraiz2.Text = x2.ToString();
+                txtboxraiz1.Text = x1.ToString();
+                txtboxraiz2.Text = x2.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Datos invalidos, porfavor agregue cantidades correctas", "Error de datos");
+            }
         }
 
         private void regresarAHomeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,6 +54,16 @@ namespace formulario_Barron.Formas.Login
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void botonlimpiarraiz_Click(object sender, EventArgs e)
+        {
+            txtboxraiz1.Clear();
+            txtboxraiz2.Clear();
+            txtboxvalorA.Clear();
+            txtboxvalorB.Clear();
+            txtboxvalorC.Clear();
+           
         }
     }
 }

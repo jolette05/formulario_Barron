@@ -44,6 +44,8 @@ namespace formulario_Barron.Formas.Login
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cómoFuncionaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.botoncalculardinero = new System.Windows.Forms.Button();
+            this.botonlimpiardinero = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -109,7 +111,7 @@ namespace formulario_Barron.Formas.Login
             // 
             this.pictureBox1.BackgroundImage = global::formulario_Barron.Properties.Resources.Captura_de_pantalla_2023_09_28_194840;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(911, 173);
+            this.pictureBox1.Location = new System.Drawing.Point(880, 121);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(382, 236);
             this.pictureBox1.TabIndex = 5;
@@ -117,6 +119,7 @@ namespace formulario_Barron.Formas.Login
             // 
             // txtboxequivale
             // 
+            this.txtboxequivale.Enabled = false;
             this.txtboxequivale.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxequivale.Location = new System.Drawing.Point(441, 346);
             this.txtboxequivale.Multiline = true;
@@ -153,7 +156,7 @@ namespace formulario_Barron.Formas.Login
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1322, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1322, 30);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -163,20 +166,20 @@ namespace formulario_Barron.Formas.Login
             this.regresarAHomeToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(86, 27);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(77, 26);
             this.archivoToolStripMenuItem.Text = "Archivo ";
             // 
             // regresarAHomeToolStripMenuItem
             // 
             this.regresarAHomeToolStripMenuItem.Name = "regresarAHomeToolStripMenuItem";
-            this.regresarAHomeToolStripMenuItem.Size = new System.Drawing.Size(223, 28);
+            this.regresarAHomeToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.regresarAHomeToolStripMenuItem.Text = "Regresar a home";
             this.regresarAHomeToolStripMenuItem.Click += new System.EventHandler(this.regresarAHomeToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(223, 28);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.salirToolStripMenuItem.Text = "Salir ";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -185,14 +188,38 @@ namespace formulario_Barron.Formas.Login
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cómoFuncionaToolStripMenuItem});
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(72, 27);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // cómoFuncionaToolStripMenuItem
             // 
             this.cómoFuncionaToolStripMenuItem.Name = "cómoFuncionaToolStripMenuItem";
-            this.cómoFuncionaToolStripMenuItem.Size = new System.Drawing.Size(232, 28);
+            this.cómoFuncionaToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.cómoFuncionaToolStripMenuItem.Text = "¿Cómo funciona ?";
+            // 
+            // botoncalculardinero
+            // 
+            this.botoncalculardinero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.botoncalculardinero.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botoncalculardinero.Location = new System.Drawing.Point(855, 427);
+            this.botoncalculardinero.Name = "botoncalculardinero";
+            this.botoncalculardinero.Size = new System.Drawing.Size(199, 75);
+            this.botoncalculardinero.TabIndex = 10;
+            this.botoncalculardinero.Text = "Calcular ";
+            this.botoncalculardinero.UseVisualStyleBackColor = false;
+            this.botoncalculardinero.Click += new System.EventHandler(this.botoncalculardinero_Click);
+            // 
+            // botonlimpiardinero
+            // 
+            this.botonlimpiardinero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.botonlimpiardinero.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonlimpiardinero.Location = new System.Drawing.Point(1070, 427);
+            this.botonlimpiardinero.Name = "botonlimpiardinero";
+            this.botonlimpiardinero.Size = new System.Drawing.Size(202, 75);
+            this.botonlimpiardinero.TabIndex = 11;
+            this.botonlimpiardinero.Text = "Limpiar";
+            this.botonlimpiardinero.UseVisualStyleBackColor = false;
+            this.botonlimpiardinero.Click += new System.EventHandler(this.botonlimpiardinero_Click);
             // 
             // conversiones_de_moneda
             // 
@@ -201,6 +228,8 @@ namespace formulario_Barron.Formas.Login
             this.BackgroundImage = global::formulario_Barron.Properties.Resources.fondo_de_conversiones;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1322, 526);
+            this.Controls.Add(this.botonlimpiardinero);
+            this.Controls.Add(this.botoncalculardinero);
             this.Controls.Add(this.lblmsg);
             this.Controls.Add(this.txtboxingresarcantidad);
             this.Controls.Add(this.txtboxequivale);
@@ -239,5 +268,7 @@ namespace formulario_Barron.Formas.Login
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cómoFuncionaToolStripMenuItem;
+        private System.Windows.Forms.Button botoncalculardinero;
+        private System.Windows.Forms.Button botonlimpiardinero;
     }
 }

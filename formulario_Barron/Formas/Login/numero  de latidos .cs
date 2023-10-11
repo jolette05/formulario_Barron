@@ -24,21 +24,7 @@ namespace formulario_Barron.Formas.Login
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            double edad, pulsaciones   ;
-            edad= Convert.ToDouble(txtboxedad.Text);
-
-            if (cmbxgenero.SelectedIndex == 0)
-            {
-                pulsaciones = (220 - edad / 10) * 0.60 ; 
-                lbllatidos.Text = "Latidos por minuto  ";
-                txboxlatidos.Text = Convert.ToString(pulsaciones);
-            }
-            else if (cmbxgenero.SelectedIndex == 1)
-            {
-                pulsaciones = (210 - edad / 10 )*0.60 ;
-                lbllatidos.Text = "Latidos por minuto ";
-                txboxlatidos.Text = Convert.ToString(pulsaciones);
-            }
+            
         }
 
         private void numerodelatidos_Load(object sender, EventArgs e)
@@ -56,6 +42,38 @@ namespace formulario_Barron.Formas.Login
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void botoncalcularlatidos_Click(object sender, EventArgs e)
+        {
+            try { 
+            double edad, pulsaciones;
+            edad = Convert.ToDouble(txtboxedad.Text);
+
+                if (cmbxgenero.SelectedIndex == 0)
+                {
+                    pulsaciones = (220 - edad / 10) * 0.60;
+                    lbllatidos.Text = "Latidos por minuto  ";
+                    txtboxlatidos.Text = Convert.ToString(pulsaciones);
+                }
+                else if (cmbxgenero.SelectedIndex == 1)
+                {
+                    pulsaciones = (210 - edad / 10) * 0.60;
+                    lbllatidos.Text = "Latidos por minuto ";
+                    txtboxlatidos.Text = Convert.ToString(pulsaciones);
+                }
+
+            }
+            catch
+            {
+                MessageBox.Show("Datos invalidos, porfavor agregue cantidades correctas", "Error de datos");
+            }
+        }
+
+        private void botonlimpiarlatidos_Click(object sender, EventArgs e)
+        {
+            txtboxedad.Clear();
+            txtboxlatidos.Clear();
         }
     }
 }

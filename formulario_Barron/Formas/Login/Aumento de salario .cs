@@ -42,35 +42,7 @@ namespace formulario_Barron.Formas.Login
 
         private void cmboxsalario_SelectedIndexChanged(object sender, EventArgs e)
         {
-            double salario, nuevo_salario;
-            salario = Convert.ToDouble(txtboxsalario.Text);
-
-            if (cmboxsalario.SelectedIndex == 0)
-            {
-                nuevo_salario = (salario * 0.05) + salario;
-                txtboxsalarion.Text = Convert.ToString(nuevo_salario);
-            }
-            else if (cmboxsalario.SelectedIndex == 1)
-            {
-                nuevo_salario = (salario * 0.10) + salario;
-                txtboxsalarion.Text = Convert.ToString(nuevo_salario);
-            }
-            else if (cmboxsalario.SelectedIndex == 2)
-            {
-                nuevo_salario = (salario * 0.15) + salario;
-                txtboxsalarion.Text = Convert.ToString(nuevo_salario);
-            }
-            else if (cmboxsalario.SelectedIndex == 3)
-            {
-                nuevo_salario = (salario * 0.20) + salario;
-                txtboxsalarion.Text = Convert.ToString(nuevo_salario);
-            }
-            else if (cmboxsalario.SelectedIndex == 4)
-            {
-                nuevo_salario = (salario * 0.25) + salario;
-                txtboxsalarion.Text = Convert.ToString(nuevo_salario);
-            }
-
+           
         }
 
         private void regresarahomesalario_Click(object sender, EventArgs e)
@@ -83,6 +55,47 @@ namespace formulario_Barron.Formas.Login
         private void salirsalario_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void botoncalcularsalario_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                double salario, nuevo_salario;
+                salario = Convert.ToDouble(txtboxsalario.Text);
+
+                if (cmboxsalario.SelectedIndex == 0)
+                {
+                    nuevo_salario = (salario * 0.05) + salario;
+                    txtboxsalarion.Text = Convert.ToString(nuevo_salario);
+                }
+                else if (cmboxsalario.SelectedIndex == 1)
+                {
+                    nuevo_salario = (salario * 0.10) + salario;
+                    txtboxsalarion.Text = Convert.ToString(nuevo_salario);
+                }
+                else if (cmboxsalario.SelectedIndex == 2)
+                {
+                    nuevo_salario = (salario * 0.15) + salario;
+                    txtboxsalarion.Text = Convert.ToString(nuevo_salario);
+                }
+                else if (cmboxsalario.SelectedIndex == 3)
+                {
+                    nuevo_salario = (salario * 0.20) + salario;
+                    txtboxsalarion.Text = Convert.ToString(nuevo_salario);
+                }
+                else if (cmboxsalario.SelectedIndex == 4)
+                {
+                    nuevo_salario = (salario * 0.25) + salario;
+                    txtboxsalarion.Text = Convert.ToString(nuevo_salario);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Datos invalidos, porfavor agregue cantidades correctas", "Error de datos");
+            }
+
         }
     }
     }

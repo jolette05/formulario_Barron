@@ -124,8 +124,8 @@
   <data name="fondo de conversiones" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo de conversiones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="login 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ecuacionesdesegundogrado_portada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ecuacionesdesegundogrado_portada.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de pantalla 2023-09-27 232206" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2023-09-27 232206.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,6 +142,9 @@
   <data name="Captura de pantalla 2023-09-28 221427" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2023-09-28 221427.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Aumento salario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aumento salario.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1280x960-Imagen-sobre-solo-flores" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1280x960-Imagen-sobre-solo-flores.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,26 +157,26 @@
   <data name="usuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usuarios.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="triangulo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\triangulo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="fondo de latidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo de latidos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="usuario icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usuario icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="triangulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\triangulo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="login 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="welcome 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\welcome 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ecuaciones fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ecuaciones fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon contraseña" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon contraseña.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="32e4ac93987df7dd32f8ef6963fe70be" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\32e4ac93987df7dd32f8ef6963fe70be.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="triangulo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\triangulo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de pantalla 2023-09-28 194540" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2023-09-28 194540.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,11 +184,11 @@
   <data name="fondo del area" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo del area.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Aumento salario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Aumento salario.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="triangulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\triangulo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ecuaciones fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ecuaciones fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="32e4ac93987df7dd32f8ef6963fe70be" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\32e4ac93987df7dd32f8ef6963fe70be.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usuario.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,7 +196,7 @@
   <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ecuacionesdesegundogrado_portada" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ecuacionesdesegundogrado_portada.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo.visorimagrn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo.visorimagrn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

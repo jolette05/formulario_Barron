@@ -52,7 +52,7 @@ namespace formulario_Barron.Formas.Login
             // 
             this.pictureBox1.BackgroundImage = global::formulario_Barron.Properties.Resources.usuario;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1047, 122);
+            this.pictureBox1.Location = new System.Drawing.Point(1006, 130);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 207);
             this.pictureBox1.TabIndex = 0;
@@ -161,9 +161,9 @@ namespace formulario_Barron.Formas.Login
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.MediumPurple;
-            this.button1.Location = new System.Drawing.Point(963, 417);
+            this.button1.Location = new System.Drawing.Point(988, 392);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(233, 83);
+            this.button1.Size = new System.Drawing.Size(289, 85);
             this.button1.TabIndex = 10;
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = false;
@@ -176,7 +176,7 @@ namespace formulario_Barron.Formas.Login
             this.archivoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1334, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1334, 28);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -187,20 +187,20 @@ namespace formulario_Barron.Formas.Login
             this.salirdesderegistro});
             this.archivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(81, 27);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // regresarahomedesderegistro
             // 
             this.regresarahomedesderegistro.Name = "regresarahomedesderegistro";
-            this.regresarahomedesderegistro.Size = new System.Drawing.Size(223, 28);
+            this.regresarahomedesderegistro.Size = new System.Drawing.Size(204, 26);
             this.regresarahomedesderegistro.Text = "Regresar a home";
             this.regresarahomedesderegistro.Click += new System.EventHandler(this.regresarahomedesderegistro_Click);
             // 
             // salirdesderegistro
             // 
             this.salirdesderegistro.Name = "salirdesderegistro";
-            this.salirdesderegistro.Size = new System.Drawing.Size(223, 28);
+            this.salirdesderegistro.Size = new System.Drawing.Size(204, 26);
             this.salirdesderegistro.Text = "Salir";
             this.salirdesderegistro.Click += new System.EventHandler(this.salirdesderegistro_Click);
             // 

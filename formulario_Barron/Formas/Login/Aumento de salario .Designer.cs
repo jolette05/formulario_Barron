@@ -44,6 +44,7 @@ namespace formulario_Barron.Formas.Login
             this.regresarahomesalario = new System.Windows.Forms.ToolStripMenuItem();
             this.salirsalario = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.botoncalcularsalario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -99,7 +100,7 @@ namespace formulario_Barron.Formas.Login
             // 
             this.pictureBox1.BackgroundImage = global::formulario_Barron.Properties.Resources.Captura_de_pantalla_2023_09_28_234925;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1010, 166);
+            this.pictureBox1.Location = new System.Drawing.Point(997, 143);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(281, 246);
             this.pictureBox1.TabIndex = 4;
@@ -115,6 +116,7 @@ namespace formulario_Barron.Formas.Login
             // 
             // txtboxsalarion
             // 
+            this.txtboxsalarion.Enabled = false;
             this.txtboxsalarion.Location = new System.Drawing.Point(414, 357);
             this.txtboxsalarion.Multiline = true;
             this.txtboxsalarion.Name = "txtboxsalarion";
@@ -125,7 +127,7 @@ namespace formulario_Barron.Formas.Login
             // 
             this.btonlimpiar.BackColor = System.Drawing.Color.MediumPurple;
             this.btonlimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btonlimpiar.Location = new System.Drawing.Point(796, 456);
+            this.btonlimpiar.Location = new System.Drawing.Point(1054, 466);
             this.btonlimpiar.Name = "btonlimpiar";
             this.btonlimpiar.Size = new System.Drawing.Size(201, 70);
             this.btonlimpiar.TabIndex = 8;
@@ -168,7 +170,7 @@ namespace formulario_Barron.Formas.Login
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1315, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1315, 30);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -178,28 +180,40 @@ namespace formulario_Barron.Formas.Login
             this.regresarahomesalario,
             this.salirsalario});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(81, 27);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 26);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // regresarahomesalario
             // 
             this.regresarahomesalario.Name = "regresarahomesalario";
-            this.regresarahomesalario.Size = new System.Drawing.Size(224, 28);
+            this.regresarahomesalario.Size = new System.Drawing.Size(204, 26);
             this.regresarahomesalario.Text = "Regresar a home";
             this.regresarahomesalario.Click += new System.EventHandler(this.regresarahomesalario_Click);
             // 
             // salirsalario
             // 
             this.salirsalario.Name = "salirsalario";
-            this.salirsalario.Size = new System.Drawing.Size(224, 28);
+            this.salirsalario.Size = new System.Drawing.Size(204, 26);
             this.salirsalario.Text = "Salir ";
             this.salirsalario.Click += new System.EventHandler(this.salirsalario_Click);
             // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(72, 27);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // botoncalcularsalario
+            // 
+            this.botoncalcularsalario.BackColor = System.Drawing.Color.MediumPurple;
+            this.botoncalcularsalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botoncalcularsalario.Location = new System.Drawing.Point(810, 466);
+            this.botoncalcularsalario.Name = "botoncalcularsalario";
+            this.botoncalcularsalario.Size = new System.Drawing.Size(196, 70);
+            this.botoncalcularsalario.TabIndex = 12;
+            this.botoncalcularsalario.Text = "Calcular";
+            this.botoncalcularsalario.UseVisualStyleBackColor = false;
+            this.botoncalcularsalario.Click += new System.EventHandler(this.botoncalcularsalario_Click);
             // 
             // Salario
             // 
@@ -208,6 +222,7 @@ namespace formulario_Barron.Formas.Login
             this.BackgroundImage = global::formulario_Barron.Properties.Resources.Aumento_salario1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1315, 548);
+            this.Controls.Add(this.botoncalcularsalario);
             this.Controls.Add(this.cmboxsalario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btonlimpiar);
@@ -248,5 +263,6 @@ namespace formulario_Barron.Formas.Login
         private System.Windows.Forms.ToolStripMenuItem regresarahomesalario;
         private System.Windows.Forms.ToolStripMenuItem salirsalario;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.Button botoncalcularsalario;
     }
 }

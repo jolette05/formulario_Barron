@@ -43,6 +43,7 @@ namespace formulario_Barron.Formas
             this.calcularSalarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.encontrarRaicesRealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visorDeImagenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +57,7 @@ namespace formulario_Barron.Formas
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1340, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1340, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -67,21 +68,21 @@ namespace formulario_Barron.Formas
             this.salirToolStripMenuItem,
             this.regresarToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(81, 27);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.archivoToolStripMenuItem.Text = "Archivo";
             this.archivoToolStripMenuItem.Click += new System.EventHandler(this.archivoToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // regresarToolStripMenuItem
             // 
             this.regresarToolStripMenuItem.Name = "regresarToolStripMenuItem";
-            this.regresarToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.regresarToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.regresarToolStripMenuItem.Text = "Regresar ";
             this.regresarToolStripMenuItem.Click += new System.EventHandler(this.regresarToolStripMenuItem_Click);
             // 
@@ -90,14 +91,14 @@ namespace formulario_Barron.Formas
             this.formasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.videoToolStripMenuItem});
             this.formasToolStripMenuItem.Name = "formasToolStripMenuItem";
-            this.formasToolStripMenuItem.Size = new System.Drawing.Size(79, 27);
+            this.formasToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
             this.formasToolStripMenuItem.Text = "Formas";
             this.formasToolStripMenuItem.Click += new System.EventHandler(this.formasToolStripMenuItem_Click);
             // 
             // videoToolStripMenuItem
             // 
             this.videoToolStripMenuItem.Name = "videoToolStripMenuItem";
-            this.videoToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.videoToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.videoToolStripMenuItem.Text = "Video";
             this.videoToolStripMenuItem.Click += new System.EventHandler(this.videoToolStripMenuItem_Click);
             // 
@@ -109,58 +110,66 @@ namespace formulario_Barron.Formas
             this.cambiarDineroToolStripMenuItem,
             this.numeroDeLatidosToolStripMenuItem,
             this.calcularSalarioToolStripMenuItem,
-            this.encontrarRaicesRealesToolStripMenuItem});
+            this.encontrarRaicesRealesToolStripMenuItem,
+            this.visorDeImagenesToolStripMenuItem});
             this.ejerciciosToolStripMenuItem.Name = "ejerciciosToolStripMenuItem";
-            this.ejerciciosToolStripMenuItem.Size = new System.Drawing.Size(98, 27);
+            this.ejerciciosToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.ejerciciosToolStripMenuItem.Text = "Ejercicios ";
             // 
             // calculadoraToolStripMenuItem
             // 
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(352, 28);
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(313, 26);
             this.calculadoraToolStripMenuItem.Text = "Calculadora ";
             this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
             // 
             // encontrarElAreaDeUnTrianguloToolStripMenuItem
             // 
             this.encontrarElAreaDeUnTrianguloToolStripMenuItem.Name = "encontrarElAreaDeUnTrianguloToolStripMenuItem";
-            this.encontrarElAreaDeUnTrianguloToolStripMenuItem.Size = new System.Drawing.Size(352, 28);
+            this.encontrarElAreaDeUnTrianguloToolStripMenuItem.Size = new System.Drawing.Size(313, 26);
             this.encontrarElAreaDeUnTrianguloToolStripMenuItem.Text = "Encontrar el área de un triángulo ";
             this.encontrarElAreaDeUnTrianguloToolStripMenuItem.Click += new System.EventHandler(this.encontrarElAreaDeUnTrianguloToolStripMenuItem_Click);
             // 
             // cambiarDineroToolStripMenuItem
             // 
             this.cambiarDineroToolStripMenuItem.Name = "cambiarDineroToolStripMenuItem";
-            this.cambiarDineroToolStripMenuItem.Size = new System.Drawing.Size(352, 28);
+            this.cambiarDineroToolStripMenuItem.Size = new System.Drawing.Size(313, 26);
             this.cambiarDineroToolStripMenuItem.Text = "Cambiar dinero ";
             this.cambiarDineroToolStripMenuItem.Click += new System.EventHandler(this.cambiarDineroToolStripMenuItem_Click);
             // 
             // numeroDeLatidosToolStripMenuItem
             // 
             this.numeroDeLatidosToolStripMenuItem.Name = "numeroDeLatidosToolStripMenuItem";
-            this.numeroDeLatidosToolStripMenuItem.Size = new System.Drawing.Size(352, 28);
+            this.numeroDeLatidosToolStripMenuItem.Size = new System.Drawing.Size(313, 26);
             this.numeroDeLatidosToolStripMenuItem.Text = "Número de latidos ";
             this.numeroDeLatidosToolStripMenuItem.Click += new System.EventHandler(this.numeroDeLatidosToolStripMenuItem_Click);
             // 
             // calcularSalarioToolStripMenuItem
             // 
             this.calcularSalarioToolStripMenuItem.Name = "calcularSalarioToolStripMenuItem";
-            this.calcularSalarioToolStripMenuItem.Size = new System.Drawing.Size(352, 28);
+            this.calcularSalarioToolStripMenuItem.Size = new System.Drawing.Size(313, 26);
             this.calcularSalarioToolStripMenuItem.Text = "Calcular salario ";
             this.calcularSalarioToolStripMenuItem.Click += new System.EventHandler(this.calcularSalarioToolStripMenuItem_Click);
             // 
             // encontrarRaicesRealesToolStripMenuItem
             // 
             this.encontrarRaicesRealesToolStripMenuItem.Name = "encontrarRaicesRealesToolStripMenuItem";
-            this.encontrarRaicesRealesToolStripMenuItem.Size = new System.Drawing.Size(352, 28);
+            this.encontrarRaicesRealesToolStripMenuItem.Size = new System.Drawing.Size(313, 26);
             this.encontrarRaicesRealesToolStripMenuItem.Text = "Encontrar raíces reales ";
             this.encontrarRaicesRealesToolStripMenuItem.Click += new System.EventHandler(this.encontrarRaicesRealesToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(72, 27);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // visorDeImagenesToolStripMenuItem
+            // 
+            this.visorDeImagenesToolStripMenuItem.Name = "visorDeImagenesToolStripMenuItem";
+            this.visorDeImagenesToolStripMenuItem.Size = new System.Drawing.Size(313, 26);
+            this.visorDeImagenesToolStripMenuItem.Text = "Visor de Imagenes";
+            this.visorDeImagenesToolStripMenuItem.Click += new System.EventHandler(this.visorDeImagenesToolStripMenuItem_Click);
             // 
             // Home
             // 
@@ -196,5 +205,6 @@ namespace formulario_Barron.Formas
         private System.Windows.Forms.ToolStripMenuItem numeroDeLatidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calcularSalarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem encontrarRaicesRealesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visorDeImagenesToolStripMenuItem;
     }
 }

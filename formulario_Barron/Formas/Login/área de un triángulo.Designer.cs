@@ -34,9 +34,9 @@ namespace formulario_Barron.Formas.Login
             this.Altura_triangulo = new System.Windows.Forms.Label();
             this.Area = new System.Windows.Forms.Label();
             this.Calcular_area = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtboxbase = new System.Windows.Forms.TextBox();
+            this.txtboxarea = new System.Windows.Forms.TextBox();
+            this.txtboxaltura = new System.Windows.Forms.TextBox();
             this.triangulo = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,6 +44,7 @@ namespace formulario_Barron.Formas.Login
             this.salirarea = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cómoFuncionaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.botonlimpiartriangulo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.triangulo)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -110,35 +111,35 @@ namespace formulario_Barron.Formas.Login
             this.Calcular_area.UseVisualStyleBackColor = false;
             this.Calcular_area.Click += new System.EventHandler(this.Calcular_area_Click);
             // 
-            // textBox1
+            // txtboxbase
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(295, 131);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(330, 57);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtboxbase.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxbase.Location = new System.Drawing.Point(295, 131);
+            this.txtboxbase.Multiline = true;
+            this.txtboxbase.Name = "txtboxbase";
+            this.txtboxbase.Size = new System.Drawing.Size(330, 57);
+            this.txtboxbase.TabIndex = 6;
+            this.txtboxbase.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtboxarea
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(295, 324);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(330, 58);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtboxarea.Enabled = false;
+            this.txtboxarea.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxarea.Location = new System.Drawing.Point(295, 324);
+            this.txtboxarea.Multiline = true;
+            this.txtboxarea.Name = "txtboxarea";
+            this.txtboxarea.Size = new System.Drawing.Size(330, 58);
+            this.txtboxarea.TabIndex = 7;
+            this.txtboxarea.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // txtboxaltura
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(295, 217);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(330, 57);
-            this.textBox3.TabIndex = 8;
+            this.txtboxaltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxaltura.Location = new System.Drawing.Point(295, 217);
+            this.txtboxaltura.Multiline = true;
+            this.txtboxaltura.Name = "txtboxaltura";
+            this.txtboxaltura.Size = new System.Drawing.Size(330, 57);
+            this.txtboxaltura.TabIndex = 8;
             // 
             // triangulo
             // 
@@ -158,7 +159,7 @@ namespace formulario_Barron.Formas.Login
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1347, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1347, 30);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -169,20 +170,20 @@ namespace formulario_Barron.Formas.Login
             this.salirarea});
             this.archivoToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(86, 27);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(77, 26);
             this.archivoToolStripMenuItem.Text = "Archivo ";
             // 
             // regresarahomearea
             // 
             this.regresarahomearea.Name = "regresarahomearea";
-            this.regresarahomearea.Size = new System.Drawing.Size(224, 28);
+            this.regresarahomearea.Size = new System.Drawing.Size(205, 26);
             this.regresarahomearea.Text = "Regresas a home";
             this.regresarahomearea.Click += new System.EventHandler(this.regresasAHomeToolStripMenuItem_Click);
             // 
             // salirarea
             // 
             this.salirarea.Name = "salirarea";
-            this.salirarea.Size = new System.Drawing.Size(224, 28);
+            this.salirarea.Size = new System.Drawing.Size(205, 26);
             this.salirarea.Text = "Salir";
             this.salirarea.Click += new System.EventHandler(this.salirarea_Click);
             // 
@@ -193,14 +194,27 @@ namespace formulario_Barron.Formas.Login
             this.cómoFuncionaToolStripMenuItem});
             this.ayudaToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(72, 27);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
             // cómoFuncionaToolStripMenuItem
             // 
             this.cómoFuncionaToolStripMenuItem.Name = "cómoFuncionaToolStripMenuItem";
-            this.cómoFuncionaToolStripMenuItem.Size = new System.Drawing.Size(232, 28);
+            this.cómoFuncionaToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.cómoFuncionaToolStripMenuItem.Text = "¿Cómo funciona ?";
+            // 
+            // botonlimpiartriangulo
+            // 
+            this.botonlimpiartriangulo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.botonlimpiartriangulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonlimpiartriangulo.ForeColor = System.Drawing.Color.SlateBlue;
+            this.botonlimpiartriangulo.Location = new System.Drawing.Point(955, 412);
+            this.botonlimpiartriangulo.Name = "botonlimpiartriangulo";
+            this.botonlimpiartriangulo.Size = new System.Drawing.Size(212, 89);
+            this.botonlimpiartriangulo.TabIndex = 11;
+            this.botonlimpiartriangulo.Text = "Limpiar ";
+            this.botonlimpiartriangulo.UseVisualStyleBackColor = false;
+            this.botonlimpiartriangulo.Click += new System.EventHandler(this.botonlimpiartriangulo_Click);
             // 
             // Area_de_un_trianfulo
             // 
@@ -209,10 +223,11 @@ namespace formulario_Barron.Formas.Login
             this.BackgroundImage = global::formulario_Barron.Properties.Resources.fondo_del_area;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1347, 532);
+            this.Controls.Add(this.botonlimpiartriangulo);
             this.Controls.Add(this.triangulo);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtboxaltura);
+            this.Controls.Add(this.txtboxarea);
+            this.Controls.Add(this.txtboxbase);
             this.Controls.Add(this.Calcular_area);
             this.Controls.Add(this.Area);
             this.Controls.Add(this.Altura_triangulo);
@@ -238,9 +253,9 @@ namespace formulario_Barron.Formas.Login
         private System.Windows.Forms.Label Altura_triangulo;
         private System.Windows.Forms.Label Area;
         private System.Windows.Forms.Button Calcular_area;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtboxbase;
+        private System.Windows.Forms.TextBox txtboxarea;
+        private System.Windows.Forms.TextBox txtboxaltura;
         private System.Windows.Forms.PictureBox triangulo;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
@@ -248,5 +263,6 @@ namespace formulario_Barron.Formas.Login
         private System.Windows.Forms.ToolStripMenuItem salirarea;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cómoFuncionaToolStripMenuItem;
+        private System.Windows.Forms.Button botonlimpiartriangulo;
     }
 }
