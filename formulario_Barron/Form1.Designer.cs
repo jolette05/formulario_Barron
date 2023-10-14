@@ -92,6 +92,7 @@ namespace formulario_Barron
             this.botonIniciarSesion.TabIndex = 4;
             this.botonIniciarSesion.Text = "Iniciar ";
             this.botonIniciarSesion.UseVisualStyleBackColor = false;
+            this.botonIniciarSesion.UseWaitCursor = true;
             this.botonIniciarSesion.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
@@ -141,7 +142,7 @@ namespace formulario_Barron
             this.click_para_registrar.TabIndex = 8;
             this.click_para_registrar.Text = "click aqui ";
             this.click_para_registrar.Click += new System.EventHandler(this.click_para_registrar_Click);
-            
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);

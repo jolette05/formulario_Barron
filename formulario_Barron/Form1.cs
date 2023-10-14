@@ -22,41 +22,50 @@ namespace formulario_Barron
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            
             try
             {
-                TextReader InicioseSesion = new StreamReader(txtboxNombreSesion.Text + ".txt");
-               
-                if (InicioseSesion.ReadLine() == txtboxContraseña.Text)
+
+
+                TextReader Inicio = new StreamReader(txtboxNombreSesion.Text + ".txt" + true);
+
+                if (Inicio.ReadLine() == txtboxContraseña.Text + ".txt" ||  Inicio.ReadLine() == txtboxNombreSesion.Text + ".txt")
                 {
                     MessageBox.Show("El usuario es correcto ");
-                    Home home = new Home();
-                    home.Show();
-                    Hide();
-                    
+
+         
+
                 }
-                
-                else 
+                else
                 {
-                    MessageBox.Show("El usuario no se ha encontrado");
-
-                    
+                    MessageBox.Show("Por favor añada datos validos ");
+                    return;
                 }
-                
 
-
-                if (InicioseSesion.ReadLine() == (""))
-                {
-                    MessageBox.Show("Algu,porfavor añada lod datos del usuario");
-
-                }
+                Home home = new Home();
+                home.Show();
             }
             catch
             {
-                MessageBox.Show("Datos incorrectos, por favor añada datos validos","Error de datos");
-            }
-          }
-
         
+
+                if ( txtboxContraseña.Text != "")
+                    
+                {
+                    MessageBox.Show("El usuario o la contraseña son incorrectas", "Erro al iniciar ");
+                }
+
+            }
+
+
+
+
+        }
+       
+
+
+
 
         private void label3_Click(object sender, EventArgs e)
         {

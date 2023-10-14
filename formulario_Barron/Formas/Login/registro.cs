@@ -21,25 +21,31 @@ namespace formulario_Barron.Formas.Login
         private void button1_Click(object sender, EventArgs e)
         {
             try
-            {
-                TextWriter RegistrarUsuario = new StreamWriter(@"C:\Users\ameri\source\repos\formulario_Barron\formulario_Barron\bin\Debug\" + txtboxNombre.Text + ".txt", true);
-                RegistrarUsuario.WriteLine(txtboxNombre.Text);
-                RegistrarUsuario.WriteLine(txtboxApellidos.Text);
-                RegistrarUsuario.WriteLine(txtboxUsuario.Text);
-                RegistrarUsuario.WriteLine(txtboxContraseña.Text);
-                RegistrarUsuario.Close();
+            { 
+                
+              
+                    TextWriter RegistrarUsuario = new StreamWriter(@"C:\Users\ameri\source\repos\formulario_Barron\formulario_Barron\bin\Debug\" + txtboxNombre.Text + ".txt", true);
+                    RegistrarUsuario.WriteLine(txtboxNombre.Text);
+                    RegistrarUsuario.WriteLine(txtboxApellidos.Text);
+                    RegistrarUsuario.WriteLine(txtboxUsuario.Text);
+                    RegistrarUsuario.WriteLine(txtboxContraseña.Text);
+                    RegistrarUsuario.Close();
+                    MessageBox.Show("Se ha registrado correctamente");
+               
 
-                MessageBox.Show("Se ha registrado correctamente", "Registro de usuario");
-                txtboxNombre.Clear();
-                txtboxApellidos.Clear();
-                txtboxUsuario.Clear();
-                txtboxContraseña.Clear();
 
             }
-            catch
+             catch 
             {
-                MessageBox.Show("Datos incorrectos,porfavor añada datos correctos ","Error");
+                MessageBox.Show("Hubo un error,el cual es : " , "EROR");
+
+
             }
+
+
+
+
+
         }
 
         private void label2_Click(object sender, EventArgs e)
