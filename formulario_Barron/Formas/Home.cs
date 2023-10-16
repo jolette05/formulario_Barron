@@ -106,6 +106,13 @@ namespace formulario_Barron.Formas
             login.Show();
             Hide();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Prueva_matematica login = new Prueva_matematica();
+            login.Show();
+            Hide();
+        }
     }
 }
 

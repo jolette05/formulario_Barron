@@ -100,6 +100,12 @@
     <Compile Include="Formas\Login\numero  de latidos .Designer.cs">
       <DependentUpon>numero  de latidos .cs</DependentUpon>
     </Compile>
+    <Compile Include="Formas\Login\Prueva matematica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\Login\Prueva matematica.Designer.cs">
+      <DependentUpon>Prueva matematica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formas\Login\Visor de imagenes .cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formas\Login\Formavideo.resx">
       <DependentUpon>Formavideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\Login\Prueva matematica.resx">
+      <DependentUpon>Prueva matematica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formas\Login\registro.resx">
       <DependentUpon>registro.cs</DependentUpon>
