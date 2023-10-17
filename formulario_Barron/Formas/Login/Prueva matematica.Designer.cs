@@ -30,55 +30,55 @@ namespace formulario_Barron.Formas.Login
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.timelabel = new System.Windows.Forms.Label();
-            this.numsuma1 = new System.Windows.Forms.Label();
+            this.timeLabel = new System.Windows.Forms.Label();
+            this.plusLeftLabel = new System.Windows.Forms.Label();
             this.signoigual = new System.Windows.Forms.Label();
             this.numsuma2 = new System.Windows.Forms.Label();
-            this.plusRight = new System.Windows.Forms.Label();
-            this.parasumar = new System.Windows.Forms.NumericUpDown();
+            this.plusRightLabel = new System.Windows.Forms.Label();
+            this.sum = new System.Windows.Forms.NumericUpDown();
             this.igualresta = new System.Windows.Forms.Label();
-            this.numresta2 = new System.Windows.Forms.Label();
-            this.miniussigno = new System.Windows.Forms.Label();
-            this.numresta1 = new System.Windows.Forms.Label();
-            this.resultadoresta = new System.Windows.Forms.NumericUpDown();
+            this.minusRightLabel = new System.Windows.Forms.Label();
+            this.minus = new System.Windows.Forms.Label();
+            this.minusLeftLabel = new System.Windows.Forms.Label();
+            this.difference = new System.Windows.Forms.NumericUpDown();
             this.igualdividir = new System.Windows.Forms.Label();
             this.igualmultiplicar = new System.Windows.Forms.Label();
-            this.num2dividir = new System.Windows.Forms.Label();
-            this.num2multipicar = new System.Windows.Forms.Label();
-            this.signodividir = new System.Windows.Forms.Label();
-            this.signomultilplicar = new System.Windows.Forms.Label();
-            this.num1dividir = new System.Windows.Forms.Label();
-            this.num1multiplicar = new System.Windows.Forms.Label();
-            this.resultadomultiplicar = new System.Windows.Forms.NumericUpDown();
-            this.resultadodividir = new System.Windows.Forms.NumericUpDown();
-            this.botonIniciar = new System.Windows.Forms.Button();
+            this.dividedRightLabel = new System.Windows.Forms.Label();
+            this.timesRightLabel = new System.Windows.Forms.Label();
+            this.divide = new System.Windows.Forms.Label();
+            this.times = new System.Windows.Forms.Label();
+            this.dividedLeftLabel = new System.Windows.Forms.Label();
+            this.timesLeftLabel = new System.Windows.Forms.Label();
+            this.product = new System.Windows.Forms.NumericUpDown();
+            this.quotient = new System.Windows.Forms.NumericUpDown();
+            this.startButton = new System.Windows.Forms.Button();
+            this.timeLeft = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timeleft = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.parasumar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultadoresta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultadomultiplicar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultadodividir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.difference)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quotient)).BeginInit();
             this.SuspendLayout();
             // 
-            // timelabel
+            // timeLabel
             // 
-            this.timelabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.timelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timelabel.Location = new System.Drawing.Point(958, 0);
-            this.timelabel.Name = "timelabel";
-            this.timelabel.Size = new System.Drawing.Size(200, 30);
-            this.timelabel.TabIndex = 0;
+            this.timeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeLabel.Location = new System.Drawing.Point(958, 0);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(200, 30);
+            this.timeLabel.TabIndex = 0;
             // 
-            // numsuma1
+            // plusLeftLabel
             // 
-            this.numsuma1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numsuma1.Location = new System.Drawing.Point(62, 40);
-            this.numsuma1.Name = "numsuma1";
-            this.numsuma1.Size = new System.Drawing.Size(60, 50);
-            this.numsuma1.TabIndex = 1;
-            this.numsuma1.Text = "?";
-            this.numsuma1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.numsuma1.Click += new System.EventHandler(this.pluslabel_Click);
+            this.plusLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusLeftLabel.Location = new System.Drawing.Point(62, 80);
+            this.plusLeftLabel.Name = "plusLeftLabel";
+            this.plusLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.plusLeftLabel.TabIndex = 1;
+            this.plusLeftLabel.Text = "?";
+            this.plusLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plusLeftLabel.Click += new System.EventHandler(this.numsuma1_Click);
             // 
             // signoigual
             // 
@@ -93,30 +93,31 @@ namespace formulario_Barron.Formas.Login
             // numsuma2
             // 
             this.numsuma2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numsuma2.Location = new System.Drawing.Point(298, 75);
+            this.numsuma2.Location = new System.Drawing.Point(187, 80);
             this.numsuma2.Name = "numsuma2";
             this.numsuma2.Size = new System.Drawing.Size(60, 50);
             this.numsuma2.TabIndex = 3;
-            this.numsuma2.Text = "?";
+            this.numsuma2.Text = "+";
             this.numsuma2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plusRight
+            // plusRightLabel
             // 
-            this.plusRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plusRight.Location = new System.Drawing.Point(166, 75);
-            this.plusRight.Name = "plusRight";
-            this.plusRight.Size = new System.Drawing.Size(60, 50);
-            this.plusRight.TabIndex = 4;
-            this.plusRight.Text = "+";
-            this.plusRight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plusRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusRightLabel.Location = new System.Drawing.Point(307, 80);
+            this.plusRightLabel.Name = "plusRightLabel";
+            this.plusRightLabel.Size = new System.Drawing.Size(60, 50);
+            this.plusRightLabel.TabIndex = 4;
+            this.plusRightLabel.Text = "?";
+            this.plusRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // parasumar
+            // sum
             // 
-            this.parasumar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.parasumar.Location = new System.Drawing.Point(561, 80);
-            this.parasumar.Name = "parasumar";
-            this.parasumar.Size = new System.Drawing.Size(132, 41);
-            this.parasumar.TabIndex = 1;
+            this.sum.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sum.Location = new System.Drawing.Point(561, 80);
+            this.sum.Name = "sum";
+            this.sum.Size = new System.Drawing.Size(132, 41);
+            this.sum.TabIndex = 1;
+            this.sum.ValueChanged += new System.EventHandler(this.parasumar_ValueChanged);
             // 
             // igualresta
             // 
@@ -128,43 +129,43 @@ namespace formulario_Barron.Formas.Login
             this.igualresta.Text = "=";
             this.igualresta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numresta2
+            // minusRightLabel
             // 
-            this.numresta2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numresta2.Location = new System.Drawing.Point(298, 178);
-            this.numresta2.Name = "numresta2";
-            this.numresta2.Size = new System.Drawing.Size(60, 50);
-            this.numresta2.TabIndex = 7;
-            this.numresta2.Text = "?";
-            this.numresta2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.minusRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minusRightLabel.Location = new System.Drawing.Point(298, 178);
+            this.minusRightLabel.Name = "minusRightLabel";
+            this.minusRightLabel.Size = new System.Drawing.Size(60, 50);
+            this.minusRightLabel.TabIndex = 7;
+            this.minusRightLabel.Text = "?";
+            this.minusRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // miniussigno
+            // minus
             // 
-            this.miniussigno.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.miniussigno.Location = new System.Drawing.Point(166, 178);
-            this.miniussigno.Name = "miniussigno";
-            this.miniussigno.Size = new System.Drawing.Size(60, 50);
-            this.miniussigno.TabIndex = 8;
-            this.miniussigno.Text = "-";
-            this.miniussigno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minus.Location = new System.Drawing.Point(166, 178);
+            this.minus.Name = "minus";
+            this.minus.Size = new System.Drawing.Size(60, 50);
+            this.minus.TabIndex = 8;
+            this.minus.Text = "-";
+            this.minus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numresta1
+            // minusLeftLabel
             // 
-            this.numresta1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numresta1.Location = new System.Drawing.Point(62, 178);
-            this.numresta1.Name = "numresta1";
-            this.numresta1.Size = new System.Drawing.Size(60, 50);
-            this.numresta1.TabIndex = 9;
-            this.numresta1.Text = "?";
-            this.numresta1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.minusLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minusLeftLabel.Location = new System.Drawing.Point(62, 178);
+            this.minusLeftLabel.Name = "minusLeftLabel";
+            this.minusLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.minusLeftLabel.TabIndex = 9;
+            this.minusLeftLabel.Text = "?";
+            this.minusLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // resultadoresta
+            // difference
             // 
-            this.resultadoresta.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultadoresta.Location = new System.Drawing.Point(561, 187);
-            this.resultadoresta.Name = "resultadoresta";
-            this.resultadoresta.Size = new System.Drawing.Size(132, 41);
-            this.resultadoresta.TabIndex = 2;
+            this.difference.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.difference.Location = new System.Drawing.Point(561, 187);
+            this.difference.Name = "difference";
+            this.difference.Size = new System.Drawing.Size(132, 41);
+            this.difference.TabIndex = 2;
             // 
             // igualdividir
             // 
@@ -186,146 +187,146 @@ namespace formulario_Barron.Formas.Login
             this.igualmultiplicar.Text = "=";
             this.igualmultiplicar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // num2dividir
+            // dividedRightLabel
             // 
-            this.num2dividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num2dividir.Location = new System.Drawing.Point(298, 378);
-            this.num2dividir.Name = "num2dividir";
-            this.num2dividir.Size = new System.Drawing.Size(60, 50);
-            this.num2dividir.TabIndex = 13;
-            this.num2dividir.Text = "?";
-            this.num2dividir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dividedRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dividedRightLabel.Location = new System.Drawing.Point(298, 378);
+            this.dividedRightLabel.Name = "dividedRightLabel";
+            this.dividedRightLabel.Size = new System.Drawing.Size(60, 50);
+            this.dividedRightLabel.TabIndex = 13;
+            this.dividedRightLabel.Text = "?";
+            this.dividedRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // num2multipicar
+            // timesRightLabel
             // 
-            this.num2multipicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num2multipicar.Location = new System.Drawing.Point(298, 270);
-            this.num2multipicar.Name = "num2multipicar";
-            this.num2multipicar.Size = new System.Drawing.Size(60, 50);
-            this.num2multipicar.TabIndex = 14;
-            this.num2multipicar.Text = "?";
-            this.num2multipicar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.timesRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timesRightLabel.Location = new System.Drawing.Point(298, 270);
+            this.timesRightLabel.Name = "timesRightLabel";
+            this.timesRightLabel.Size = new System.Drawing.Size(60, 50);
+            this.timesRightLabel.TabIndex = 14;
+            this.timesRightLabel.Text = "?";
+            this.timesRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // signodividir
+            // divide
             // 
-            this.signodividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signodividir.Location = new System.Drawing.Point(166, 378);
-            this.signodividir.Name = "signodividir";
-            this.signodividir.Size = new System.Drawing.Size(60, 50);
-            this.signodividir.TabIndex = 15;
-            this.signodividir.Text = "/";
-            this.signodividir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.divide.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.divide.Location = new System.Drawing.Point(166, 378);
+            this.divide.Name = "divide";
+            this.divide.Size = new System.Drawing.Size(60, 50);
+            this.divide.TabIndex = 15;
+            this.divide.Text = "/";
+            this.divide.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // signomultilplicar
+            // times
             // 
-            this.signomultilplicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signomultilplicar.Location = new System.Drawing.Point(166, 270);
-            this.signomultilplicar.Name = "signomultilplicar";
-            this.signomultilplicar.Size = new System.Drawing.Size(60, 50);
-            this.signomultilplicar.TabIndex = 16;
-            this.signomultilplicar.Text = "x";
-            this.signomultilplicar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.times.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.times.Location = new System.Drawing.Point(166, 270);
+            this.times.Name = "times";
+            this.times.Size = new System.Drawing.Size(60, 50);
+            this.times.TabIndex = 16;
+            this.times.Text = "x";
+            this.times.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // num1dividir
+            // dividedLeftLabel
             // 
-            this.num1dividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num1dividir.Location = new System.Drawing.Point(62, 378);
-            this.num1dividir.Name = "num1dividir";
-            this.num1dividir.Size = new System.Drawing.Size(60, 50);
-            this.num1dividir.TabIndex = 17;
-            this.num1dividir.Text = "?";
-            this.num1dividir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dividedLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dividedLeftLabel.Location = new System.Drawing.Point(62, 378);
+            this.dividedLeftLabel.Name = "dividedLeftLabel";
+            this.dividedLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.dividedLeftLabel.TabIndex = 17;
+            this.dividedLeftLabel.Text = "?";
+            this.dividedLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // num1multiplicar
+            // timesLeftLabel
             // 
-            this.num1multiplicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num1multiplicar.Location = new System.Drawing.Point(62, 270);
-            this.num1multiplicar.Name = "num1multiplicar";
-            this.num1multiplicar.Size = new System.Drawing.Size(60, 50);
-            this.num1multiplicar.TabIndex = 18;
-            this.num1multiplicar.Text = "?";
-            this.num1multiplicar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.timesLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timesLeftLabel.Location = new System.Drawing.Point(62, 270);
+            this.timesLeftLabel.Name = "timesLeftLabel";
+            this.timesLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.timesLeftLabel.TabIndex = 18;
+            this.timesLeftLabel.Text = "?";
+            this.timesLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // resultadomultiplicar
+            // product
             // 
-            this.resultadomultiplicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultadomultiplicar.Location = new System.Drawing.Point(561, 275);
-            this.resultadomultiplicar.Name = "resultadomultiplicar";
-            this.resultadomultiplicar.Size = new System.Drawing.Size(132, 41);
-            this.resultadomultiplicar.TabIndex = 3;
+            this.product.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product.Location = new System.Drawing.Point(561, 275);
+            this.product.Name = "product";
+            this.product.Size = new System.Drawing.Size(132, 41);
+            this.product.TabIndex = 3;
             // 
-            // resultadodividir
+            // quotient
             // 
-            this.resultadodividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultadodividir.Location = new System.Drawing.Point(561, 383);
-            this.resultadodividir.Name = "resultadodividir";
-            this.resultadodividir.Size = new System.Drawing.Size(132, 41);
-            this.resultadodividir.TabIndex = 4;
+            this.quotient.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quotient.Location = new System.Drawing.Point(561, 383);
+            this.quotient.Name = "quotient";
+            this.quotient.Size = new System.Drawing.Size(132, 41);
+            this.quotient.TabIndex = 4;
             // 
-            // botonIniciar
+            // startButton
             // 
-            this.botonIniciar.AutoSize = true;
-            this.botonIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonIniciar.Location = new System.Drawing.Point(880, 409);
-            this.botonIniciar.Name = "botonIniciar";
-            this.botonIniciar.Size = new System.Drawing.Size(200, 73);
-            this.botonIniciar.TabIndex = 0;
-            this.botonIniciar.Text = "Iniciar la prueba ";
-            this.botonIniciar.UseVisualStyleBackColor = true;
-            this.botonIniciar.Click += new System.EventHandler(this.botonIniciar_Click);
+            this.startButton.AutoSize = true;
+            this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startButton.Location = new System.Drawing.Point(880, 409);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(200, 73);
+            this.startButton.TabIndex = 0;
+            this.startButton.Text = "Iniciar la prueba ";
+            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.botonIniciar_Click);
+            // 
+            // timeLeft
+            // 
+            this.timeLeft.AutoSize = true;
+            this.timeLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeLeft.Location = new System.Drawing.Point(833, 0);
+            this.timeLeft.Name = "timeLeft";
+            this.timeLeft.Size = new System.Drawing.Size(119, 29);
+            this.timeLeft.TabIndex = 19;
+            this.timeLeft.Text = "Time Left";
             // 
             // timer1
             // 
-            this.timer1.Tag = "CheckTheAnswer";
-            this.timer1.Tick += new System.EventHandler(this.pluslabel_Click);
-            // 
-            // timeleft
-            // 
-            this.timeleft.AutoSize = true;
-            this.timeleft.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeleft.Location = new System.Drawing.Point(833, 0);
-            this.timeleft.Name = "timeleft";
-            this.timeleft.Size = new System.Drawing.Size(119, 29);
-            this.timeleft.TabIndex = 19;
-            this.timeleft.Text = "Time Left";
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Prueva_matematica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1170, 559);
-            this.Controls.Add(this.timeleft);
-            this.Controls.Add(this.botonIniciar);
-            this.Controls.Add(this.resultadodividir);
-            this.Controls.Add(this.resultadomultiplicar);
-            this.Controls.Add(this.num1multiplicar);
-            this.Controls.Add(this.num1dividir);
-            this.Controls.Add(this.signomultilplicar);
-            this.Controls.Add(this.signodividir);
-            this.Controls.Add(this.num2multipicar);
-            this.Controls.Add(this.num2dividir);
+            this.Controls.Add(this.timeLeft);
+            this.Controls.Add(this.startButton);
+            this.Controls.Add(this.quotient);
+            this.Controls.Add(this.product);
+            this.Controls.Add(this.timesLeftLabel);
+            this.Controls.Add(this.dividedLeftLabel);
+            this.Controls.Add(this.times);
+            this.Controls.Add(this.divide);
+            this.Controls.Add(this.timesRightLabel);
+            this.Controls.Add(this.dividedRightLabel);
             this.Controls.Add(this.igualmultiplicar);
             this.Controls.Add(this.igualdividir);
-            this.Controls.Add(this.resultadoresta);
-            this.Controls.Add(this.numresta1);
-            this.Controls.Add(this.miniussigno);
-            this.Controls.Add(this.numresta2);
+            this.Controls.Add(this.difference);
+            this.Controls.Add(this.minusLeftLabel);
+            this.Controls.Add(this.minus);
+            this.Controls.Add(this.minusRightLabel);
             this.Controls.Add(this.igualresta);
-            this.Controls.Add(this.parasumar);
-            this.Controls.Add(this.plusRight);
+            this.Controls.Add(this.sum);
+            this.Controls.Add(this.plusRightLabel);
             this.Controls.Add(this.numsuma2);
             this.Controls.Add(this.signoigual);
-            this.Controls.Add(this.numsuma1);
-            this.Controls.Add(this.timelabel);
+            this.Controls.Add(this.plusLeftLabel);
+            this.Controls.Add(this.timeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Prueva_matematica";
             this.Text = "Prueva_matematica";
             this.Load += new System.EventHandler(this.Prueva_matematica_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.parasumar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultadoresta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultadomultiplicar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resultadodividir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.difference)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.product)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quotient)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,29 +334,29 @@ namespace formulario_Barron.Formas.Login
 
         #endregion
 
-        private System.Windows.Forms.Label timelabel;
-        private System.Windows.Forms.Label numsuma1;
+        private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.Label plusLeftLabel;
         private System.Windows.Forms.Label signoigual;
         private System.Windows.Forms.Label numsuma2;
-        private System.Windows.Forms.Label plusRight;
-        private System.Windows.Forms.NumericUpDown parasumar;
+        private System.Windows.Forms.Label plusRightLabel;
+        private System.Windows.Forms.NumericUpDown sum;
         private System.Windows.Forms.Label igualresta;
-        private System.Windows.Forms.Label numresta2;
-        private System.Windows.Forms.Label miniussigno;
-        private System.Windows.Forms.Label numresta1;
-        private System.Windows.Forms.NumericUpDown resultadoresta;
+        private System.Windows.Forms.Label minusRightLabel;
+        private System.Windows.Forms.Label minus;
+        private System.Windows.Forms.Label minusLeftLabel;
+        private System.Windows.Forms.NumericUpDown difference;
         private System.Windows.Forms.Label igualdividir;
         private System.Windows.Forms.Label igualmultiplicar;
-        private System.Windows.Forms.Label num2dividir;
-        private System.Windows.Forms.Label num2multipicar;
-        private System.Windows.Forms.Label signodividir;
-        private System.Windows.Forms.Label signomultilplicar;
-        private System.Windows.Forms.Label num1dividir;
-        private System.Windows.Forms.Label num1multiplicar;
-        private System.Windows.Forms.NumericUpDown resultadomultiplicar;
-        private System.Windows.Forms.NumericUpDown resultadodividir;
-        private System.Windows.Forms.Button botonIniciar;
+        private System.Windows.Forms.Label dividedRightLabel;
+        private System.Windows.Forms.Label timesRightLabel;
+        private System.Windows.Forms.Label divide;
+        private System.Windows.Forms.Label times;
+        private System.Windows.Forms.Label dividedLeftLabel;
+        private System.Windows.Forms.Label timesLeftLabel;
+        private System.Windows.Forms.NumericUpDown product;
+        private System.Windows.Forms.NumericUpDown quotient;
+        private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.Label timeLeft;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label timeleft;
     }
 }

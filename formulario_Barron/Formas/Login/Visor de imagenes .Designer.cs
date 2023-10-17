@@ -37,9 +37,9 @@ namespace formulario_Barron.Formas.Login
             this.botonborrar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.botoncerrar = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regresarAHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,6 +80,7 @@ namespace formulario_Barron.Formas.Login
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // checboxAjustar
             // 
@@ -87,7 +88,7 @@ namespace formulario_Barron.Formas.Login
             this.checboxAjustar.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checboxAjustar.Location = new System.Drawing.Point(3, 375);
             this.checboxAjustar.Name = "checboxAjustar";
-            this.checboxAjustar.Size = new System.Drawing.Size(154, 43);
+            this.checboxAjustar.Size = new System.Drawing.Size(150, 42);
             this.checboxAjustar.TabIndex = 1;
             this.checboxAjustar.Text = " Ajustar";
             this.checboxAjustar.UseVisualStyleBackColor = true;
@@ -101,7 +102,6 @@ namespace formulario_Barron.Formas.Login
             this.flowLayoutPanel1.Controls.Add(this.botoncerrar);
             this.flowLayoutPanel1.Controls.Add(this.menuStrip1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(197, 375);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(912, 64);
@@ -110,7 +110,7 @@ namespace formulario_Barron.Formas.Login
             // botonmostrarimagen
             // 
             this.botonmostrarimagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonmostrarimagen.Location = new System.Drawing.Point(767, 3);
+            this.botonmostrarimagen.Location = new System.Drawing.Point(3, 3);
             this.botonmostrarimagen.Name = "botonmostrarimagen";
             this.botonmostrarimagen.Size = new System.Drawing.Size(142, 61);
             this.botonmostrarimagen.TabIndex = 0;
@@ -121,7 +121,7 @@ namespace formulario_Barron.Formas.Login
             // botonborrar
             // 
             this.botonborrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonborrar.Location = new System.Drawing.Point(653, 3);
+            this.botonborrar.Location = new System.Drawing.Point(151, 3);
             this.botonborrar.Name = "botonborrar";
             this.botonborrar.Size = new System.Drawing.Size(108, 61);
             this.botonborrar.TabIndex = 1;
@@ -132,7 +132,7 @@ namespace formulario_Barron.Formas.Login
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(474, 3);
+            this.button3.Location = new System.Drawing.Point(265, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(173, 61);
             this.button3.TabIndex = 2;
@@ -143,7 +143,7 @@ namespace formulario_Barron.Formas.Login
             // botoncerrar
             // 
             this.botoncerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botoncerrar.Location = new System.Drawing.Point(335, 3);
+            this.botoncerrar.Location = new System.Drawing.Point(444, 3);
             this.botoncerrar.Name = "botoncerrar";
             this.botoncerrar.Size = new System.Drawing.Size(133, 61);
             this.botoncerrar.TabIndex = 3;
@@ -151,21 +151,21 @@ namespace formulario_Barron.Formas.Login
             this.botoncerrar.UseVisualStyleBackColor = true;
             this.botoncerrar.Click += new System.EventHandler(this.botoncerrar_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Location = new System.Drawing.Point(580, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(252, 30);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All file" +
     "s (*.*)|*.*";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(130, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(202, 24);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // menuStrip2
             // 
